@@ -1,5 +1,57 @@
-body{
+*{
     margin:0;
     padding:0;
-    background: rgb(156, 156, 156);
+    font-family:sans-serif;
+}
+body{
+    background: rgb(62, 84, 131);
+}
+#sideBar{
+    top:0;
+    left:0;
+    position:relative;
+    width:10%;
+    color:white;
+    background-color:rgb(116, 52, 10);
+    text-align:center;
+}
+#sideBar ul{
+    font-size:14px;
+    list-style:none;
+    width:100%;
+}
+#sideBar li{
+    line-height: 50px;
+    height:50px;
+    padding:5px 10px;
+    border:solid 1px black;
+}
+#sideBar li:hover{
+    background-color:salmon;
+}
+#openChecks{
+    position:relative;
+    top:0; 
+    height:600px;
+    left:10%;
+    width:50%;
+    margin:10px;
+    background-color:red;
+    border:solid 1px white;
+}
+#openChecks h1{
+    text-align:center;
+    border:solid 1px black;
+    color:white;
+}
+#dashBoard{
+    position:absolute;
+    width:40%;
+    height:600px;
+    top:0;
+    left:60%;
+    margin:10px;
+    border:solid 1px white;
+    background:green;
+    color:white;
 }
