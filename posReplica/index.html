@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Point of Sale Replica</title>
     <link rel="stylesheet" type="text/css" href="posStyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -13,9 +14,41 @@
 </head>
 
 <body>
-    <button id="testBtn">Test</button>
-    <script src="posReplica.js"></script>
+    
+    <div id="wrapper" class="container-fluid row">
+        <header class="row">
+            <p class="col-8">8:00</p>
+            <p class="col-2">12/19/2018</p>
+            <p class="col-2">User: Guest</p>
+        </header>
+        <div id="sideBar" class="col-xs-1">
+            <ul>
+                <li>Back</li>
+                <li>Forward</li>
+                <li>Home</li>
+                <li>Void</li>
+                <li>Cancel</li>
+                <li>Tender</li>
+                <li>Report</li>
+                <li>Function</li>
+                <li>Sign Off</li>
+            </ul>
+        </div>
+        <div id="checks" class="col-xs-6">
+            <h1>Checks</h1>
+            <div id="checksContainer">
+                Checks Container
+            </div>
+        </div>
+        <div id="dashBoard" class="col-xs-5 container-fluid">
+            <h1> Dashboard </h1>
+            <div id="dashBoardContainer" class="col-12">
+                Dashboard Container
+            </div>
+        </div>
+    </div>
 
+    <script src="posReplica.js"></script>
 </body>
 
 </html>
