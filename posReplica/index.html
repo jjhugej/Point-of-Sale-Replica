@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Point of Sale Replica</title>
     <link rel="stylesheet" type="text/css" href="posStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -23,15 +24,15 @@
         </div>  
         <div id="sideBar">
             <ul>
-                <li>Back</li>
-                <li>Forward</li>
-                <li>Home</li>
-                <li>Void</li>
-                <li>Cancel Chk</li>
-                <li>Tender</li>
-                <li>Report</li>
-                <li>Function</li>
-                <li>Sign Off</li>
+                <li class="fas fa-undo-alt"><p>Back</p></li>
+                <li class="fas fa-redo-alt"><p>Forward</p></li>
+                <li class="fas fa-home"><p>Home</p></li>
+                <li class="fas fa-ban"><p>Void</p></li>
+                <li class="fas fa-cut"><p>Cancel Chk</p></li>
+                <li class="fas fa-dollar-sign"><p>Tender</p></li>
+                <li class="fas fa-scroll"><p>Report</p></li>
+                <li class="fas fa-tools"><p>Function</p></li>
+                <li class="fas fa-users"><p>Sign Off</p></li>
             </ul>
         </div>
         <div id ="openChecks">  
@@ -39,11 +40,16 @@
                     <div class="checkBox"><h1>Check 1<p>1234</p></h1></div>
                     <div class="checkBox"><h1>Check 2<p>4321</p></h1></div>
                     <div class="checkBox"><h1>Check 3<p>2365</p></h1></div>
-                    <div class="checkBox"><h1>Check 1<p>1234</p></h1></div>
-                    <div class="checkBox"><h1>Check 2<p>4321</p></h1></div>
-                    <div class="checkBox"><h1>Check 3<p>2365</p></h1></div>
-                    <div class="checkBox"><h1>Check 3<p>2365</p></h1></div>
-                    <div class="checkBox"><h1>Check 3<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 4<p>1234</p></h1></div>
+                    <div class="checkBox"><h1>Check 5<p>4321</p></h1></div>
+                    <div class="checkBox"><h1>Check 6<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 7<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 9<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 10<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 11<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 12<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 13<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 14<p>2365</p></h1></div>
             </div>  
         </div> 
         <div id="toolbar">
@@ -54,6 +60,32 @@
                 <div class="toolbarBox"><h1>Clock Out</h1></div>
             </div>
         </div> 
+        <div id="checkItems">
+            <div id="checkItemsDashBoard">
+                <p>Check #:</p>
+                <p>Table:</p>
+                <p>Covers:</p>
+            </div>
+            <div id="checkItemsDisplayBox"></div>
+            <div id="calculator">
+                <div id="calculatorWrapper">
+                    <div value=7 class="calcButton">7</div>
+                    <div value=8 class="calcButton">8</div>
+                    <div value=9 class="calcButton">9</div>
+                    <div value=0 class="calcButton">Clr</div>
+                    <div value=4 class="calcButton">4</div>
+                    <div value=5 class="calcButton">5</div>
+                    <div value=6 class="calcButton">6</div>
+                    <div value=6 class="calcButton">Del</div>
+                    <div value=1 class="calcButton">1</div>
+                    <div value=2 class="calcButton">2</div>
+                    <div value=3 class="calcButton">3</div>
+                    <div value=0 class="calcButton">Entr</div>
+                    <div value=0 class="calcButton">0</div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
    
     <script src="posReplica.js"></script>

@@ -3,6 +3,7 @@
     padding:0;
     font-family:sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 #wrapper{
@@ -17,7 +18,6 @@
     padding: 0;
     margin:0;
     color:white;
-    vertical-align: middle;
 }
 #header p{
     display:inline-block ;
@@ -28,6 +28,7 @@
     height:.9em;
     width:.9em;
     background-color:rgb(17, 224, 17);
+    transform: translateY(-1vh) 
 }
 #sideBar{
     display:inline-block;
@@ -43,9 +44,17 @@
     list-style-type: none;
 }
 #sideBar ul li{
+    display:block;
+    font-size:25px;
+    padding:10px 0px;
+    margin:5px 0px;
+}
+#sideBar ul li:hover{
+    color:rgb(226, 226, 226);
+    cursor:pointer;
+}
+#sideBar ul li p{
     font-size:10px;
-    padding:20px 0px;
-    margin:0px;
 }
 #openChecks{
     position:absolute;
@@ -77,6 +86,7 @@
 }
 #openChecks h1:hover{
     background-color:rgb(160, 223, 193); 
+    cursor: pointer;
 }
 #openChecks h1 p{
     font-size:10px;
@@ -90,6 +100,7 @@
     min-width:60vw;
     max-width:60vw;
     min-height:10vh;
+    max-height:12vh;
     text-align:center;
 }
 #toolbarWrapper{
@@ -111,6 +122,54 @@
 }
 .toolbarBox:hover{
     background-color:rgb(160, 223, 193);
+    cursor:pointer;
+}
+#checkItems{
+    position:absolute;
+    display:inline-block;
+    height:92.5vh;
+    min-width:28vw;
+    left:70vw;
+    margin:0 20px;
+    padding:5px;
+}
+#checkItemsDashBoard{
+    text-align: center;
+    padding:1px;
+}
+#checkItemsDashBoard p{
+    display:inline;
+    margin:1px 15px;
+    padding:2px;
+    color:rgb(226, 226, 226);
+    font-size:12px;    
+}
+#checkItemsDisplayBox{
+    background-color:rgb(19, 81, 82);
+    border:solid 2px rgb(15, 62, 63);
+    min-height:40vh;
+    min-width:20vw;
+    margin:5px;
+}
+#calculatorWrapper{
+    display:flex;
+    text-align:center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:10px;
+}
+.calcButton{
+    height:30px;
+    flex-basis:20%;
+    margin:3px;
+    padding:5px;
+    background:rgb(29, 119, 121);
+    border:solid 1px rgb(26, 107, 109);
+    color:rgb(226, 226, 226);
+}
+.calcButton:hover{
+    background:rgb(43, 178, 180);
+    cursor: pointer;
 }
 
 
