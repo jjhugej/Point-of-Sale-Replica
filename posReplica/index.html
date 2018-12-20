@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Point of Sale Replica</title>
     <link rel="stylesheet" type="text/css" href="posStyles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -34,17 +33,27 @@
                 <li>Function</li>
                 <li>Sign Off</li>
             </ul>
-        </div>  
-        <div id="openChecks">   
-                <h1 class="col-sm-2">Check 1<p>1234</p></h1>
-                <h1 class="col-sm-2">Check 2<p>4321</p></h1>
-                <h1 class="col-sm-2">Check 3<p>2365</p></h1>
-                <h1 class="col-sm-2">Check 1<p>1234</p></h1>
-                <h1 class="col-sm-2">Check 2<p>4321</p></h1>
-                <h1 class="col-sm-2">Check 3<p>2365</p></h1>
-                <h1 class="col-sm-2">Check 3<p>2365</p></h1>
-                <h1 class="col-sm-2">Check 3<p>2365</p></h1>
-        </div>    
+        </div>
+        <div id ="openChecks">  
+            <div id="openChecksWrapper">   
+                    <div class="checkBox"><h1>Check 1<p>1234</p></h1></div>
+                    <div class="checkBox"><h1>Check 2<p>4321</p></h1></div>
+                    <div class="checkBox"><h1>Check 3<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 1<p>1234</p></h1></div>
+                    <div class="checkBox"><h1>Check 2<p>4321</p></h1></div>
+                    <div class="checkBox"><h1>Check 3<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 3<p>2365</p></h1></div>
+                    <div class="checkBox"><h1>Check 3<p>2365</p></h1></div>
+            </div>  
+        </div> 
+        <div id="toolbar">
+            <div id="toolbarWrapper">
+                <div class="toolbarBox"><h1>Start New Check</h1></div>
+                <div class="toolbarBox"><h1>Hold Item</h1></div>
+                <div class="toolbarBox"><h1>Change Server</h1></div>
+                <div class="toolbarBox"><h1>Clock Out</h1></div>
+            </div>
+        </div> 
     </div>
    
     <script src="posReplica.js"></script>

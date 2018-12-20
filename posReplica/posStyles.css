@@ -32,7 +32,7 @@
 #sideBar{
     display:inline-block;
     height:96vh;
-    width:10vw;
+    min-width:10vw;
     margin:0px;
     padding:0px;
     background-color:brown;
@@ -50,20 +50,28 @@
 #openChecks{
     position:absolute;
     display:inline-block;
-    overflow: auto;
     text-align:center;
     margin:0 10px;
     padding:5px 2px;
-    height:50vh;
-    width:60vw;
+    height:80vh;
+    min-width:60vw;
+    max-width:60vw;
     background-color:rgb(230, 230, 230);
 }
-#openChecks h1{
-    height:10vh;
+#openChecksWrapper{
+    padding:0 5px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.checkBox{
+    flex-basis: 20%;
     line-height:5vh;
     margin:5px;
     background-color:rgb(137, 194, 167);
     border: solid 1px black;
+}
+#openChecks h1{
     font-size:12px;
     font-weight:bold;
 }
@@ -72,6 +80,37 @@
 }
 #openChecks h1 p{
     font-size:10px;
+}
+#toolbar{
+    position:absolute;
+    display:inline-block;
+    top:86vh;
+    background-color:rgb(230, 230, 230);
+    margin:0 10px;
+    min-width:60vw;
+    max-width:60vw;
+    min-height:10vh;
+    text-align:center;
+}
+#toolbarWrapper{
+    display:flex;
+    justify-content: center;
+}
+.toolbarBox{
+    justify-content: center;
+    text-align:center;
+    flex-basis: 20%;
+    min-height:10vh;
+    line-height:10vh;
+    margin:5px;
+    background-color:rgb(137, 194, 167);
+    border: solid 1px black;
+}
+.toolbarBox h1{
+    font-size:10px;
+}
+.toolbarBox:hover{
+    background-color:rgb(160, 223, 193);
 }
 
 
